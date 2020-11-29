@@ -1,13 +1,12 @@
-import matplotlib.pyplot as plt
 import os
+import sys
 import numpy as np
+import math
 import tensorflow as tf
 from tensorflow.keras.callbacks import Callback
-import math
 import logging
-import math
+import matplotlib.pyplot as plt
 from pathlib import Path
-import sys
 
 from config.img_classification_config import ConfigObj
 

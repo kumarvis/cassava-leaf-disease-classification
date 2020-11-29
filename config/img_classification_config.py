@@ -24,12 +24,13 @@ class ImageClassificationConfig:
     No_System_Threads = 8
     Device = "cuda"
     Number_GPU = 1
+    Network_Architecture = 'EfficientnetB3'
     '''
     ## Hyper Parameters: These are the standard tuning params 
     for an experiment.
     '''
     learning_rate = 0.00008
-    batch_size_per_gpu = 32
+    batch_size_per_gpu = 1
     batch_size = batch_size_per_gpu * Number_GPU
     optimizer = 'adam'
     epochs = 1
