@@ -1,7 +1,7 @@
 import os
 import time
 import tensorflow as tf
-from src_train_model.img_classification_csv_input import ConfigObj
+from config.img_classification_config import ConfigObj
 from callbacks.lr_tracker import LRTrackerCallback
 from callbacks.one_cycle_policy import OneCycleScheduler
 

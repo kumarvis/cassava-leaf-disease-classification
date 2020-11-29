@@ -29,9 +29,9 @@ class ImageClassificationConfig:
     for an experiment.
     '''
     learning_rate = 0.00008
-    batch_size_per_gpu = 2
+    batch_size_per_gpu = 32
     batch_size = batch_size_per_gpu * Number_GPU
-    optimizer = 'radam'
+    optimizer = 'adam'
     epochs = 1
     img_dim = 224
     img_channels = 3
